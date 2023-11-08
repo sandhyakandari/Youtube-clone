@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root{
+    --background-color:#0f0f0f;
+}
+html {
+    font-family: "Inter",sans-serif;
+}
+
+body{color:white;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color: var(--background-color);
+}
+
+/* sidebar */
+.sidebar{width:15%;
+     height: 100vh;
+     position: fixed;
+     top:0;
+     padding-top:66px;
+     padding-left: 1%;
+     background-color:var(--background-color);
+     overflow: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+.box{
+    display:  flex;
+    flex-direction: column;
+    padding:4px 0px;
+}
+.activelink{ border-radius:6px;
+    background-color: #444343;}
+.sidebarlinks:hover{ border-radius:6px;
+  background-color: #444343;
+}
+.sidebar hr{
+    border:1px solid #303030;
+    width:100%;
+}
+.sidebarlinks{
+    display: flex;
+    align-items: center;
+    padding:7px;
+    font-size: 14px;
+    gap:21px;
+    font-weight:450;
+}
+.box2 h4{
+    font-size: 14px;
+    color: #AAAAAA;
+    font-weight:600;
+}
+/*main container  */
+main{
+padding-left: 17%;
+}
+.top-banner{
+display: flex;
+flex-direction: row;
+gap:10px;
+padding-left:17px;
+margin-bottom: 10px;
+overflow: hidden;
+}
+
+.bannerlink{ 
+    padding:7px;
+    display: flex;
+    white-space: nowrap;
+    height:19px;
+    align-items: center;
+    justify-content: center;
+     border-radius: 15px;
+     border:1px solid grey;
+   color:white;
+  width:auto;
+  font-size:14px;
+  font-weight: 500;
+   text-decoration: none;
+  background: linear-gradient(0deg, #303030, #303030);
+}
+.bannerlink:hover{
+    cursor: pointer;
+}
+.all{
+    background: white;
+color:black;}
+
+#video-container{
+    background-color:#0f0f0f;
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    padding:29px 0px 0px 60px;
+    color:white;
+}
+
+.video-img img{ width: 357px;
+    height: 300px;
+    border-radius:6px;
+}
+
+.video-desc{
+    width: 357px;
+    display: flex;
+    gap:5px;
+}
+.viewndtime ,.channel-name{
+    display: flex;
+    gap:5px;
+    font-size:12px;
+}
+p{
+    margin:0px;
+}
+.video-info{
+    display: flex;
+    flex-direction: column; 
+    gap:10px;}
+
+.video-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.channel-avtar img{
+    height: 36px;
+}
+.channel-desc{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="nav.css" rel="stylesheet" type="text/css">
+    <link href="mediaquery.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <div class="icon"><img src="assets/img/icons.svg"></div>
+            <div class="logo"><img src="assets/img/Logo.svg"></div>
+        </div>
+        <div class="middle">
+            <div class="input"><input id="searchitem" type="search" placeholder="search"></div>
+            <div class="icon"><img onclick="searchstring()" src="assets/img/SearchBox-Button.svg">
+            <img src="assets/img/speech.svg"></div>
+        </div>
+        <div class="right">
+            <div class="icon"><img src="assets/img/Create.svg"></div>
+            <div class="icon"><img src="assets/img/Apps.svg"></div>
+            <div class="icon"><img src="assets/img/Notifications.svg"></div>
+            <div class="icon"><img src="assets/img/Profile.svg"></div>
+        </div>
+    </nav>
+
+        <div class="sidebar">
+            <div class="box1 box">
+                <a class="sidebarlinks activelink"> <img src="assets/img/sidebar/home.svg">
+                    <span>Home</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/explor.svg">
+                    <span>Explore</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/subscription.svg">
+                    <span>Subscriptions</span>
+                </a>
+            </div>
+            <hr>
+            <div class="box2 box">
+            
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/library.svg">
+                    <span>Library</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/history.svg">
+                    <span>History</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/yourvideo.svg">
+                    <span>Your Videos</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/watchlater.svg">
+                    <span>Watch Later</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/likedvid.svg">
+                    <span>Liked Videos</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/showmore.svg">
+                    <span>Show More</span>
+                </a>
+            </div>
+    
+            <hr>
+            <div class="box2 box">
+                <h4>SUBSCRIPTIONS</h4>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/sub1.svg">
+                    <span>James Gouse</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/sub2.svg">
+                    <span>Alan cooper</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/u3.png">
+                    <span>Marcus Levin</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/u4.png">
+                    <span>Alexis Sears</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/U5.svg">
+                    <span>Jesica Lambert</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/showmore.svg">
+                    <span>Show More</span>
+                </a>
+            </div>
+            <hr>
+            <div class="box2 box">
+                <h4>MORE FROM YOUTUBE</h4>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/premium.png">
+                    <span>Youtube Premium</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/gaming.svg">
+                    <span>Gamimg</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/live.svg">
+                    <span>Live</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/sports.svg">
+                    <span>Sports</span>
+                </a>
+                <a class="sidebarlinks"> <img src="assets/img/sidebar/showmore.svg">
+                    <span>Show More</span>
+                </a>
+            </div>
+        </div>
+      
+      
+        <main>
+        <div class="top-banner">
+           
+            <a class="bannerlink all" >All</a>          
+            <span class="bannerlink" onclick= "searchquer('Live')" >Live</span>
+            <span class="bannerlink" onclick= "searchquer('Music')" >Music</span>
+            <span class="bannerlink" onclick= "searchquer('Computer programming')" >Computer programming</span>
+            <span class="bannerlink" onclick= "searchquer('Sales')" >Sales</span>
+            <span class="bannerlink" onclick= "searchquer('Indian cuisine')" >Indian cuisine</span>
+            <span class="bannerlink"  onclick= "searchquer('game shows')">Game shows</span>
+            <span class="bannerlink"  onclick= "searchquer('Gadgets')">Gadgets</span>
+            <span class="bannerlink"  onclick= "searchquer('Pop Music')">Pop Music</span>
+            <span class="bannerlink"  onclick= "searchquer('Mixes')">Mixes</span>
+            <span class="bannerlink"  onclick= "searchquer('T-series')">T-series</span>
+            <span class="bannerlink"  onclick= "searchquer('Cricket')">Cricket</span>
+            <span class="bannerlink"  onclick= "searchquer('New')">New to you</span>
+        
+        </div>
+        <div id="video-container">
+              
+        </div>
+    
+        
+    </main>
+   
+<script src="script/yt.js"></script> 
+
+</body>
+</html>
