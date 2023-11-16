@@ -4,13 +4,29 @@ const baseUrl="https://www.googleapis.com/youtube/v3";
 const APIKey="AIzaSyBdt4RAMzQVbC4ZaGY8Wbfj_ePKBuUJK8Y";
 
 const container=document.getElementById("video-container")
+let video=[];
+
+if(video.length==0){
+    container.innerHTML=``;
+    for(let i=0;i<10;i++){
+       container.innerHTML+=`
+       <div class="shimmerbox">
+      <div class="videoinfosh">
+                   <div class="videoshimmer-img">
+                    <div class="videoshimmerin-desc">
+                    </div>                   
+                   </div>
+                   <div class="videoshimmer-desc"> 
+                   </div>
+                  </div>
+                  </div>`
+}}
 
 function searchquer(q){
     console.log('search query ',q);
     getVideos(q);
 }
 async function getVideos(q){
-   console.log(q,"wuery");
     const url=`${baseUrl}/search?key=${APIKey}&q=${q}&type=videos&maxResults=30`;
     const response= await fetch(url,{
         method:"get",
@@ -19,7 +35,7 @@ async function getVideos(q){
    // console.log(data);
     const videos=data.items;
     getVideoData(videos);
-    console.log(videos); 
+    //console.log(videos); 
 }
 async function getVideoData(videos){
     console.log(videos," all video")
@@ -48,7 +64,7 @@ async function getVideosDetail(videoId){
 function renderData(videos){
     container.innerHTML=``;
  for(let i=0;i<videos.length;i++){
-    const video=videos[i];
+     video=videos[i];
     container.innerHTML+=`
    <div class="video-info" onclick="openVideoDeatils('${video.id}')">
                 <div class="video-img">

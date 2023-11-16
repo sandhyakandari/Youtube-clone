@@ -99,11 +99,72 @@ color:black;}
     padding:29px 0px 0px 60px;
     color:white;
 }
-
+.shimmerbox{
+    display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+}
+.videoinfosh{
+  display: flex;
+  flex-direction: column;
+  gap:9px;
+}
 .video-img img{ width: 357px;
     height: 300px;
     border-radius:6px;
 }
+.videoshimmer-img{
+    height: 200px;
+    width:350px;
+    border-radius: 6px;
+    background-color: #ccc;
+}
+.videoshimmerin-img{
+    width:100%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #787676;
+    animation-name: shimmer;
+    animation-duration: 3s;
+    animation-iteration-count: 6;
+    position: relative;
+}
+.videoshimmer-desc{
+    width: 350px;
+    height:80px;
+    border-radius: 6px;
+    background-color: #ccc;
+}
+.videoshimmerin-desc{
+    width:100%;
+    height:100%;
+    border-radius: 6px;
+    background-color: #787676;
+    animation-name: shimmer;
+    animation-duration: 3s;
+    animation-iteration-count: 6;
+    position: relative;
+}
+
+
+@keyframes shimmer{
+  0%{      background-color: #e9e4e4;
+     }
+     25%{
+         background-color:  #676666;}
+     
+     50%{
+         background-color: #e9e4e4;;
+     }
+   
+     75%{
+         background-color:#676666;
+     }
+     100%{
+         background-color: #dedada;
+     }
+ }
+
 
 .video-desc{
     width: 357px;

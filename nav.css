@@ -26,6 +26,7 @@ nav{position:sticky;
     border: none;
     padding-left:13px;
     font-size: 12px;
+    outline: none;
 }
 
 .middle .icon{

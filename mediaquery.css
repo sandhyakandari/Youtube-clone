@@ -7,7 +7,9 @@
 
        .sidebar{
         display: none;
-
+       }
+       .right{
+         display:none;
        }
        main{
         padding-left:0px;
@@ -15,7 +17,7 @@
       #video-container{
          padding:0px;
       }
-       .top-banner{ padding:0px;}
+       .top-banner{ padding-left:17px;}
        .box{ align-items: center;}
     }
   
