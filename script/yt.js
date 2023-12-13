@@ -64,6 +64,7 @@ async function getVideosDetail(videoId){
 function renderData(videos){
     container.innerHTML=``;
  for(let i=0;i<videos.length;i++){
+    if(videos[i]){
      video=videos[i];
     container.innerHTML+=`
    <div class="video-info" onclick="openVideoDeatils('${video.id}')">
@@ -82,7 +83,7 @@ function renderData(videos){
                     </div></div>
                 </div>
                </div>`
- }
+    } }
 }
 
 function openVideoDeatils(videoId){
