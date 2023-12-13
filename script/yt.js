@@ -66,6 +66,7 @@ function renderData(videos){
  for(let i=0;i<videos.length;i++){
     if(videos[i]){
      video=videos[i];
+        console.log(video);
     container.innerHTML+=`
    <div class="video-info" onclick="openVideoDeatils('${video.id}')">
                 <div class="video-img">
